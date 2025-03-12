@@ -10,7 +10,7 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "preview": "next build && next start",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.12.4",
+    "@sentry/nextjs": "^9",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@uploadthing/react": "^7.3.0",
     "@vercel/postgres": "^0.10.0",
