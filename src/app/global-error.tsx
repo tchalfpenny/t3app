@@ -25,3 +25,17 @@ export default function GlobalError({
     </html>
   );
 }
+
+// export default function GlobalError (props: { error: unknown }) {
+//   useEffect(() => {
+//     Sentry.captureException(props.error);
+//   }, [props.error]);
+
+//   return (
+//     <html>
+//       <body>
+//         <NextError statusCode={500} title="Error" />
+//       </body>
+//     </html>
+//   );
+// }
