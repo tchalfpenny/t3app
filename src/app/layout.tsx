@@ -13,7 +13,7 @@ import { ourFileRouter } from "./api/uploadthing/core";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
   title: "T3 Gallery",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   modal,
-}: Readonly<{ 
+}: Readonly<{
   children: React.ReactNode;
   modal: React.ReactNode;
- }>) { 
+}>) {
   return (
     <ClerkProvider>
       <html lang="en">
@@ -41,7 +41,7 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         <body className={`font-sans ${inter.variable}`}>
-          <div className="h-screen grid grid-rows-[auto,1fr]">
+          <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
             <main className="overflow-y-scroll">{children}</main>
           </div>
